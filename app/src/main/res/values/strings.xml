@@ -6,4 +6,13 @@
     <string name="logIn">Войти</string>
     <string name="signUp">Зарегистрироваться</string>
     <string name="skip">Пропустить</string>
+
+    <!--log in screen-->
+    <string name="enterUsername">Введите имя пользователя</string>
+    <string name="enterPassword">Введите пароль</string>
+    <string name="username">Имя пользователя:</string>
+    <string name="password">Пароль:</string>
+    <string name="questionNoAcc">Нет аккаунта?</string>
+
+    <!--sign up screen-->
 </resources>

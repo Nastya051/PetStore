@@ -19,9 +19,13 @@ import androidx.compose.ui.platform.LocalContext
 private val LightColorScheme = lightColorScheme(
     background = Background31,
     onBackground = OnPinkF5,
+    onPrimary = Text5,
     secondary = DarkPink68,
     onSecondary = OnPinkF5,
-    secondaryContainer = DisabledButton
+    secondaryContainer = DisabledButton,
+    tertiary = Green65,
+    outline = Transparent,
+    errorContainer = Error
 //    primary = DarkGreen31,
 //    secondary = PurpleGrey40,
 //    tertiary = Pink40

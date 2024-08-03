@@ -41,7 +41,7 @@ import com.airbnb.lottie.compose.animateLottieCompositionAsState
 import com.airbnb.lottie.compose.rememberLottieComposition
 import com.example.petstore.R
 import com.example.petstore.presentation.navigation.LocalNavController
-import com.example.petstore.presentation.ui.CommonButton
+import com.example.petstore.presentation.ui.custom_views.CommonButton
 
 @Composable
 fun StartScreen() {

@@ -8,21 +8,29 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.example.petstore.presentation.ui.screens.LogInScreen
+import com.example.petstore.presentation.ui.screens.SignUpScreen
 import com.example.petstore.presentation.ui.screens.StartScreen
 
 @Composable
 fun MainNavigationController(navController: NavHostController){
-    CompositionLocalProvider(
-        LocalNavController provides navController
-    ){
+    CompositionLocalProvider(LocalNavController provides navController){
         NavHost(
             navController = navController,
-            startDestination = Route.StartScreen.path,
+            startDestination = Route.LogInScreen.path,
             enterTransition = { fadeIn(animationSpec = tween(350)) },
             exitTransition = { fadeOut(animationSpec = tween(350)) },
         ){
             composable(route = Route.StartScreen.path) {
                 StartScreen()
+            }
+
+            composable(route = Route.LogInScreen.path) {
+                LogInScreen()
+            }
+
+            composable(route = Route.SignUpScreen.path) {
+                SignUpScreen()
             }
         }
     }
