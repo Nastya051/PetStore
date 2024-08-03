@@ -19,12 +19,15 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.example.petstore.R
+import com.example.petstore.presentation.navigation.LocalNavController
+import com.example.petstore.presentation.navigation.Route
 import com.example.petstore.presentation.ui.custom_views.BottomQuestion
 import com.example.petstore.presentation.ui.custom_views.CommonButton
 import com.example.petstore.presentation.ui.custom_views.CommonTextField
 
 @Composable
 fun LogInScreen() {
+    val navController = LocalNavController.current!!
     var username by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
     Column(
@@ -81,7 +84,7 @@ fun LogInScreen() {
             textQuestion = R.string.questionNoAcc, textButton = R.string.signUp,
             modifier = Modifier.padding(bottom = 16.dp)
         ) {
-//на экран регистрации
+            navController.navigate(Route.SignUpScreen.path)
         }
     }
 

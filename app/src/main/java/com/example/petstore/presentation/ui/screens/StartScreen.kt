@@ -41,6 +41,7 @@ import com.airbnb.lottie.compose.animateLottieCompositionAsState
 import com.airbnb.lottie.compose.rememberLottieComposition
 import com.example.petstore.R
 import com.example.petstore.presentation.navigation.LocalNavController
+import com.example.petstore.presentation.navigation.Route
 import com.example.petstore.presentation.ui.custom_views.CommonButton
 
 @Composable
@@ -94,18 +95,25 @@ fun StartScreen() {
             ) {
                 CommonButton(
                     text = stringResource(id = R.string.logIn),
-                    onClick = { /*TODO*/ },
+                    onClick = { navController.navigate(Route.LogInScreen.path) },
                     modifier = Modifier.padding(bottom = 16.dp)
                 )
-                CommonButton(text = stringResource(id = R.string.signUp), onClick = { /*TODO*/ },
-                    modifier = Modifier.padding(bottom = 16.dp))
+                CommonButton(
+                    text = stringResource(id = R.string.signUp),
+                    onClick = { navController.navigate(Route.SignUpScreen.path) },
+                    modifier = Modifier.padding(bottom = 16.dp)
+                )
                 Row(
                     modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.Center,
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     ClickableText(
                         text = AnnotatedString(stringResource(id = R.string.skip)),
-                        style = TextStyle(fontSize = 20.sp, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.secondary),
+                        style = TextStyle(
+                            fontSize = 20.sp,
+                            fontWeight = FontWeight.Bold,
+                            color = MaterialTheme.colorScheme.secondary
+                        ),
                         onClick = {})
                     Icon(
                         imageVector = ImageVector.vectorResource(id = R.drawable.ic_arrows_right_24),

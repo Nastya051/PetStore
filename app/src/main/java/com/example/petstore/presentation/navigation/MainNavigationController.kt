@@ -17,7 +17,7 @@ fun MainNavigationController(navController: NavHostController){
     CompositionLocalProvider(LocalNavController provides navController){
         NavHost(
             navController = navController,
-            startDestination = Route.LogInScreen.path,
+            startDestination = Route.StartScreen.path,
             enterTransition = { fadeIn(animationSpec = tween(350)) },
             exitTransition = { fadeOut(animationSpec = tween(350)) },
         ){
