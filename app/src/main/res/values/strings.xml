@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PetStore</string>
+
+    <!--start screen-->
+    <string name="startHeader">Добро пожаловать в PetStore!</string>
+    <string name="logIn">Войти</string>
+    <string name="signUp">Зарегистрироваться</string>
+    <string name="skip">Пропустить</string>
+</resources>
