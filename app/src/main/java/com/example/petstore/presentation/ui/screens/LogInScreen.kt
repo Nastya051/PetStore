@@ -7,7 +7,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -15,12 +14,11 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.example.petstore.R
 import com.example.petstore.presentation.navigation.LocalNavController
 import com.example.petstore.presentation.navigation.Route
+import com.example.petstore.presentation.ui.custom_views.AuthText
 import com.example.petstore.presentation.ui.custom_views.BottomQuestion
 import com.example.petstore.presentation.ui.custom_views.CommonButton
 import com.example.petstore.presentation.ui.custom_views.CommonTextField
@@ -45,26 +43,23 @@ fun LogInScreen() {
                 ),
             verticalArrangement = Arrangement.spacedBy(10.dp)
         ) {
-            Text(
-                text = stringResource(id = R.string.username),
-                fontWeight = FontWeight.W600,
-                maxLines = 1,
-                overflow = TextOverflow.Ellipsis,
+            AuthText(
+                textResource = R.string.username,
                 modifier = Modifier.padding(top = 16.dp, start = 16.dp, end = 16.dp)
             )
+
             CommonTextField(
                 textValue = username,
                 onValueChanged = { username = it },
                 placeholder = stringResource(id = R.string.enterUsername),
                 modifier = Modifier.padding(start = 16.dp, end = 16.dp)
             )
-            Text(
-                text = stringResource(id = R.string.password),
-                fontWeight = FontWeight.W600,
-                maxLines = 1,
-                overflow = TextOverflow.Ellipsis,
+
+            AuthText(
+                textResource = R.string.password,
                 modifier = Modifier.padding(start = 16.dp, end = 16.dp)
             )
+
             CommonTextField(
                 textValue = password,
                 onValueChanged = { password = it },
@@ -73,6 +68,7 @@ fun LogInScreen() {
                 trailIcon = R.drawable.ic_eye_slash_24,
                 modifier = Modifier.padding(start = 16.dp, end = 16.dp, bottom = 16.dp)
             )
+
             CommonButton(
                 text = stringResource(id = R.string.logIn),
                 onClick = { /*запрос логин и переход на главную*/ },

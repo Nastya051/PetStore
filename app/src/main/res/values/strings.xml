@@ -15,4 +15,15 @@
     <string name="questionNoAcc">Нет аккаунта?</string>
 
     <!--sign up screen-->
+    <string name="questionIsAcc">Есть аккаунт?</string>
+    <string name="concoctUsername">Придумайте имя пользователя:</string>
+    <string name="concoctPassword">Придумайте пароль:</string>
+    <string name="enterName">Введите имя</string>
+    <string name="enterSurname">Введите фамилию</string>
+    <string name="enterEmail">Введите email</string>
+    <string name="enterPhoneNumber">Введите номер телефона</string>
+    <string name="name">Имя:</string>
+    <string name="surname">Фамилия:</string>
+    <string name="email">Email:</string>
+    <string name="phoneNumber">Номер телефона:</string>
 </resources>
