@@ -1,1 +1,1 @@
-![presentation](https://github.com/Nastya051/PetStore/blob/main/presentation.gif)
+![variant3](https://github.com/Nastya051/PetStore/blob/main/variant3.gif)
