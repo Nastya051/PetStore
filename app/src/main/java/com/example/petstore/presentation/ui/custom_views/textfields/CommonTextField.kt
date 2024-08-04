@@ -1,4 +1,4 @@
-package com.example.petstore.presentation.ui.custom_views
+package com.example.petstore.presentation.ui.custom_views.textfields
 
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -35,6 +35,7 @@ fun CommonTextField(
     modifier: Modifier = Modifier,
     textValue: String,
     onValueChanged: (String) -> Unit,
+    maxLength: Int = 40,
     enabled: Boolean = true,
     isPassword: Boolean = false,
     placeholder: String,
@@ -77,7 +78,10 @@ fun CommonTextField(
                 width = 2.dp
             ),
         value = textValue,
-        onValueChange = { onValueChanged(it) },
+        onValueChange = {
+            if (it.length <= maxLength)
+                onValueChanged(it)
+        },
         enabled = enabled,
         placeholder = {
             Text(

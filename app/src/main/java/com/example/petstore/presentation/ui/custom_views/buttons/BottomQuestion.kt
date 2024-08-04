@@ -1,4 +1,4 @@
-package com.example.petstore.presentation.ui.custom_views
+package com.example.petstore.presentation.ui.custom_views.buttons
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement

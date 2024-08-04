@@ -1,4 +1,4 @@
-package com.example.petstore.presentation.ui.custom_views
+package com.example.petstore.presentation.ui.custom_views.buttons
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -28,7 +28,7 @@ fun CommonButton(
             containerColor = MaterialTheme.colorScheme.secondary,
             contentColor = MaterialTheme.colorScheme.onSecondary,
             disabledContentColor = MaterialTheme.colorScheme.secondaryContainer,
-            disabledContainerColor = MaterialTheme.colorScheme.onSecondary
+            disabledContainerColor = MaterialTheme.colorScheme.secondary.copy(alpha = 0.3f)
         ),
         enabled = enabled,
         contentPadding = PaddingValues(vertical = 14.dp)

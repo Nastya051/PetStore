@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -18,16 +19,18 @@ import androidx.compose.ui.unit.dp
 import com.example.petstore.R
 import com.example.petstore.presentation.navigation.LocalNavController
 import com.example.petstore.presentation.navigation.Route
-import com.example.petstore.presentation.ui.custom_views.AuthText
-import com.example.petstore.presentation.ui.custom_views.BottomQuestion
-import com.example.petstore.presentation.ui.custom_views.CommonButton
-import com.example.petstore.presentation.ui.custom_views.CommonTextField
+import com.example.petstore.presentation.ui.custom_views.texts.AuthText
+import com.example.petstore.presentation.ui.custom_views.buttons.BottomQuestion
+import com.example.petstore.presentation.ui.custom_views.buttons.CommonButton
+import com.example.petstore.presentation.ui.custom_views.textfields.CommonTextField
 
 @Composable
 fun LogInScreen() {
     val navController = LocalNavController.current!!
     var username by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
+    var buttonEnable by remember { mutableStateOf(false) }
+
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -71,6 +74,7 @@ fun LogInScreen() {
 
             CommonButton(
                 text = stringResource(id = R.string.logIn),
+                enabled = buttonEnable,
                 onClick = { /*запрос логин и переход на главную*/ },
                 modifier = Modifier.padding(bottom = 16.dp, start = 16.dp, end = 16.dp)
             )
@@ -84,4 +88,7 @@ fun LogInScreen() {
         }
     }
 
+    LaunchedEffect(username, password) {
+        buttonEnable = username.isNotEmpty() && password.isNotEmpty()
+    }
 }

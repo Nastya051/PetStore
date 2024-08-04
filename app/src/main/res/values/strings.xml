@@ -16,8 +16,8 @@
 
     <!--sign up screen-->
     <string name="questionIsAcc">Есть аккаунт?</string>
-    <string name="concoctUsername">Придумайте имя пользователя:</string>
-    <string name="concoctPassword">Придумайте пароль:</string>
+    <string name="concoctUsername">Придумайте имя пользователя*:</string>
+    <string name="concoctPassword">Придумайте пароль*:</string>
     <string name="enterName">Введите имя</string>
     <string name="enterSurname">Введите фамилию</string>
     <string name="enterEmail">Введите email</string>
@@ -26,4 +26,8 @@
     <string name="surname">Фамилия:</string>
     <string name="email">Email:</string>
     <string name="phoneNumber">Номер телефона:</string>
+    <string name="passLength">Пароль должен быть не менее 5 символов и содержать хотя бы 1 цифру</string>
+    <string name="incorrectPass">Некорректный пароль</string>
+    <string name="incorrectEmail">Некоректно введен email</string>
+    <string name="incorrectPhone">Некорректный номер телефона</string>
 </resources>

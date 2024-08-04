@@ -1,4 +1,4 @@
-package com.example.petstore.presentation.ui.custom_views
+package com.example.petstore.presentation.ui.custom_views.texts
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text

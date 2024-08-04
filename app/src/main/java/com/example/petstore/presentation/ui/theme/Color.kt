@@ -20,4 +20,4 @@ val Text5 = Color(0xFF2EB495)
 
 val DisabledButton = Color(0xFF94908F)
 val Transparent = Color.Transparent
-val Error=Color.Red
+val Error = Color.Red
