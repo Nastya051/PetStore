@@ -1,1 +1,1 @@
-![variant3](https://github.com/Nastya051/PetStore/blob/main/variant3.gif)
+![var4](https://github.com/Nastya051/PetStore/blob/main/var4.gif)
