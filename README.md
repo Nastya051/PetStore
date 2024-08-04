@@ -1,1 +1,1 @@
-![video_2024-08-04_14-25-50](https://github.com/Nastya051/PetStore/main/video_2024-08-04_14-25-50.gif)
+![video_2024-08-04_14-25-50](https://github.com/Nastya051/PetStore/blob/main/video_2024-08-04_14-25-50.gif)
