@@ -184,7 +184,7 @@ fun SignUpScreen() {
                 CommonButton(
                     text = stringResource(id = R.string.signUp),
                     enabled = buttonEnable,
-                    onClick = { /*запрос создания юзера и переход на главную*/ },
+                    onClick = { /*запрос создания юзера и переход на экран входа*/ },
                     modifier = Modifier.padding(bottom = 16.dp, start = 16.dp, end = 16.dp)
                 )
             }

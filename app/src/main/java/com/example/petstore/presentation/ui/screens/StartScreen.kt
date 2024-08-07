@@ -114,7 +114,7 @@ fun StartScreen() {
                             fontWeight = FontWeight.Bold,
                             color = MaterialTheme.colorScheme.secondary
                         ),
-                        onClick = {})
+                        onClick = { navController.navigate(Route.MainScreen.path) })
                     Icon(
                         imageVector = ImageVector.vectorResource(id = R.drawable.ic_arrows_right_24),
                         contentDescription = "Arrows",

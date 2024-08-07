@@ -30,4 +30,11 @@
     <string name="incorrectPass">Некорректный пароль</string>
     <string name="incorrectEmail">Некоректно введен email</string>
     <string name="incorrectPhone">Некорректный номер телефона</string>
+
+    <!--main screen-->
+    <string name="take">Забрать</string>
+    <string name="cancel">Отменить</string>
+
+    <!--top bar-->
+
 </resources>

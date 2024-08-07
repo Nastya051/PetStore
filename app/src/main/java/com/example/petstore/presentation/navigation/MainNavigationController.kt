@@ -9,6 +9,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.example.petstore.presentation.ui.screens.LogInScreen
+import com.example.petstore.presentation.ui.screens.MainScreen
 import com.example.petstore.presentation.ui.screens.SignUpScreen
 import com.example.petstore.presentation.ui.screens.StartScreen
 
@@ -31,6 +32,10 @@ fun MainNavigationController(navController: NavHostController){
 
             composable(route = Route.SignUpScreen.path) {
                 SignUpScreen()
+            }
+
+            composable(route = Route.MainScreen.path) {
+                MainScreen()
             }
         }
     }
